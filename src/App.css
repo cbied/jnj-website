@@ -43,7 +43,6 @@
 }
 
 
-
 .contactSection {
   background-image: url('contact.jpg');
   background-size: cover;
@@ -59,4 +58,26 @@
 
 .contactSection a {
   color: black
+}
+
+
+/* Services */
+.equineMassage, .redLight, .canineTherapy {
+  margin: 5rem auto;
+}
+
+.equineMassage h3, .redLight h3, .canineTherapy h3 {
+  margin-top: 2rem ; 
+}
+
+.section a {
+  color: white
+}
+
+/* Contact */ 
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
 }

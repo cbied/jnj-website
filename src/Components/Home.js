@@ -27,7 +27,7 @@ export class Home extends Component {
                         <Link to='/services'>
                             
                             <h5>Equine Sports Massage</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sapiente. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, quaerat?</p>
+                            <p>Equine massage is the use of hands, arms, elbows and/or tools to rub and knead the muscles of the horse's body to decrease tension and/or pain.  Equine massage utilizes modified human massage techniques on horses to help them perform better and decrease pain associated with training, an ill fitting saddle, an unbalanced rider or injury.</p>
                             {/* <img src={equineMassage} alt="" id='firstService'/> */}
                         </Link>
                         </Col>
@@ -35,8 +35,8 @@ export class Home extends Component {
                         <Col xs>
                         <Link to='/services'>
                             
-                            <h5>Red light therapy</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, sapiente. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, quaerat?</p>
+                            <h5>Red light Therapy</h5>
+                            <p>Reduces pain and swelling, increases lymphatic activity,accelerates cell regeneration, increases circulation, relaxes muscles and encourages collagen production. Regulates serotonin levels. Serotonin mediates inflammation, allergic reactions, aids in blood clotting, initiating sleep, and fighting depression</p>
                             {/* <img src={redLight} alt="" id='secondService'/> */}
                         </Link>
                         </Col>
