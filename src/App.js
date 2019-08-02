@@ -1,14 +1,17 @@
 import React from 'react';
-import Nav from './Components/Nav'
-import Contact from './Components/Contacts'
+import NavHeader from './Components/NavHeader'
+import { HashRouter as Router } from 'react-router-dom'
+import routes from './routes'
 import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Nav />
-      <Contact />
+      <NavHeader />
+      { routes }
     </div>
+    </Router>
   );
 }
 
