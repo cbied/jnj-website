@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom'
 import jenni from '../jenniPic.PNG'
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
 
+
 export class Home extends Component {
     render() {
         return (
             <div>
-                <Jumbotron fluid>
+                <Jumbotron fluid className='background'>
                     <Container fluid>
                     <h1 className="display-3">JnJ Equine Massage</h1>
                     <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                     </Container>
                 </Jumbotron>
                 {/* Services */}
-                <Container fluid>
+                <Container fluid id='service'>
 
                     <Row>
                         <Col xs>
@@ -23,19 +24,21 @@ export class Home extends Component {
                     </Row>
 
                     <Row className='services'>
-                        <Col xs>
-                        <Link to='/services'>
+                        <Col xs className='serviceHover'>
+                        <Link to='/services' className='noDecLink'>
                             
-                            <h5>Equine Sports Massage</h5>
+                            <h5 className='linkServices'>Equine Sports Massage</h5>
+                        
                             <p>Equine massage is the use of hands, arms, elbows and/or tools to rub and knead the muscles of the horse's body to decrease tension and/or pain.  Equine massage utilizes modified human massage techniques on horses to help them perform better and decrease pain associated with training, an ill fitting saddle, an unbalanced rider or injury.</p>
                             {/* <img src={equineMassage} alt="" id='firstService'/> */}
                         </Link>
                         </Col>
 
-                        <Col xs>
-                        <Link to='/services'>
+                        <Col xs className='serviceHover'>
+                        <Link to='/services' className='noDecLink'>
                             
                             <h5>Red light Therapy</h5>
+                        
                             <p>Reduces pain and swelling, increases lymphatic activity,accelerates cell regeneration, increases circulation, relaxes muscles and encourages collagen production. Regulates serotonin levels. Serotonin mediates inflammation, allergic reactions, aids in blood clotting, initiating sleep, and fighting depression</p>
                             {/* <img src={redLight} alt="" id='secondService'/> */}
                         </Link>

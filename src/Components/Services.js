@@ -5,7 +5,7 @@ export class Services extends Component {
 render() {
     return (
     <div>
-        <Jumbotron fluid>
+        <Jumbotron fluid className='background'>
         <Container fluid>
             <h1 className="display-3">Services</h1>
             <p className="lead">

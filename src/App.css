@@ -2,7 +2,94 @@
   text-align: center;
 }
 
+body {
+  background-image: url('./horse.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background, .about{
+  background: rgba(255,255,255,.6);
+}
+
+/* NavHeader */
+.nav-link {
+  /* margin-right: 1rem; */
+}
+
+.nav-link:focus-within {
+  background: #0069D9;
+  border-radius: 15px;
+}
+
+.navbar {
+  width: 100vw;
+  background: rgba(255,255,255,.1) !important;
+  top:0;
+  position: fixed;
+  margin-bottom:5rem;
+  z-index: 99;
+}
+
+#expanded {
+  background: rgba(255, 255, 255, 0.8) !important;
+  width: 100vw;
+  top:0;
+  position: fixed;
+  margin-bottom:5rem;
+  z-index: 99;
+}
+
 /* Home */
+div.container-fluid {
+  margin-top: 3rem;
+  /* background-color: whitesmoke; */
+}
+
+.col {
+  flex-basis: 1;
+}
+
+.display-3 {
+  font-weight: 400;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+
+#service, #service p, #service h5 {
+  background: rgba(0,0,0,0);
+  color: whitesmoke;
+}
+
+.service:hover, .service p:hover, .service h5:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+.linkServices {
+  text-decoration: none !important;
+}
+
+#service p:hover, #service h5:hover  {
+  color: black;
+}
+
+.serviceHover:hover {
+  background: rgba(255,255,255,.6);
+  border-radius: 15px;
+  
+}
+
+.noDecLink {
+  text-decoration: none !important;
+}
+
 .aboutSection {
   
 }
@@ -11,7 +98,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #E9ECEF;
+  background: white;
   border-radius: 15px;
 }
 
@@ -23,7 +110,7 @@
 
 .services {
   margin-bottom: 2rem;
-  
+  color: rgba(255,255,255,0) !important;
 }
 
 .services h5, .services p {
@@ -54,16 +141,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: .6;
 }
+
 
 .contactSection a {
   color: black
 }
 
 
+
 /* Services */
 .equineMassage, .redLight, .canineTherapy {
   margin: 5rem auto;
+  color: black;
+  background: rgba(255,255,255,.8);
 }
 
 .equineMassage h3, .redLight h3, .canineTherapy h3 {
@@ -74,10 +166,27 @@
   color: white
 }
 
+img.media-object {
+  margin: 0 5rem;
+}
+
 /* Contact */ 
 .contact {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   padding: 4rem;
+  height: 100vh;
+  
+}
+
+
+
+@media (max-width: 700px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

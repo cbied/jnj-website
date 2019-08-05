@@ -22,36 +22,67 @@ export class NavHeader extends Component {
     render() {
         return (
             <div>
-            <Navbar color="light" light expand="md">
+            {this.state.isOpen ? (
+                <Navbar color="light" light expand="md" className='' id='expanded'>
                 <NavbarBrand to="/">JnJ Equine Massage</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                    <NavItem>
-                        <Link to="/">
+                    <NavItem className='nav-link'>
+                        <Link to="/" >
                             <Button color='primary'>Home</Button>
                         </Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className='nav-link'>
                         <Link to="/services">
-                            <Button color='secondary'>Services</Button>
+                            <Button color='primary'>Services</Button>
                         </Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem  className='nav-link'>
                         <Link to="/about">
-                            <Button color='secondary'>About Us</Button>
+                            <Button color='primary'>About Us</Button>
                         </Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem  className='nav-link'>
                         <Link to="/contact">
-                            <Button color='secondary'>Contact Us</Button>
+                            <Button color='primary'>Contact Us</Button>
+                        </Link>
+                    </NavItem>
+                    
+                    </Nav>
+                </Collapse>
+            </Navbar> 
+            ) :
+            <Navbar color="light" light expand="md" className='navbar'>
+                <NavbarBrand to="/">JnJ Equine Massage</NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                    <NavItem className='nav-link'>
+                        <Link to="/" >
+                            <Button color='primary'>Home</Button>
+                        </Link>
+                    </NavItem>
+                    <NavItem className='nav-link'>
+                        <Link to="/services">
+                            <Button color='primary'>Services</Button>
+                        </Link>
+                    </NavItem>
+                    <NavItem  className='nav-link'>
+                        <Link to="/about">
+                            <Button color='primary'>About Us</Button>
+                        </Link>
+                    </NavItem>
+                    <NavItem  className='nav-link'>
+                        <Link to="/contact">
+                            <Button color='primary'>Contact Us</Button>
                         </Link>
                     </NavItem>
                     
                     </Nav>
                 </Collapse>
             </Navbar>
-
+            }
             </div>
         )
     }
