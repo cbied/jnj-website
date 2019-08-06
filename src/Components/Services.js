@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import equineMassage from '../equineMassage.jpg'
 import { Jumbotron, Container, Media } from "reactstrap";
 
 export class Services extends Component {
@@ -18,13 +19,14 @@ render() {
         
 
         <Container fluid className="equineMassage">
-        <Media className="mt-1">
+        <Media className="mt-1 smallWidth">
             <Media left middle href="#">
-            <Media
+            {/* <Media
                 object
-                data-src="holder.js/64x64"
+                data-src={equineMassage}
                 alt="Generic placeholder image"
-            />
+            /> */}
+            <img src={equineMassage} alt="equine massage" className='serviceImgs' />
             </Media>
             <Media body>
             <h3>What is Equine Massage?</h3>
@@ -61,7 +63,7 @@ render() {
         </Container>
 
         <Container fluid>
-        <Media className="mt-1 redLight">
+        <Media className="mt-1 redLight smallWidth">
             <Media body>
             <h3>Red light Therapy</h3>
             <p>
@@ -109,7 +111,7 @@ render() {
         </Container>
 
         <Container fluid className='canineTherapy'>
-        <Media className="mt-1">
+        <Media className="mt-1 smallWidth">
             <Media left middle href="#">
             <Media
                 object

@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import jenni from '../jenniPic.PNG'
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
-
+import { library } from '@fortawesome/fontawesome-svg-core/'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome/'
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons/' 
+library.add(faFacebook, faInstagram); 
 
 export class Home extends Component {
     render() {
@@ -60,10 +63,17 @@ export class Home extends Component {
                 </div>
                 </Container>
                 {/* Contact us */}
-                <div className='contactSection'>
-                    <h3>Phone: 410-903-0400</h3>
-                    <h3>Email: <a href='mailto:jennibiediger@gmail.com'>Jenni@gmail.com</a></h3>
-                </div>
+                <footer className='contactUs'>
+                    <div className='contactSection'>
+                        <h3>Phone: 410-903-0400</h3>
+                        <h3>Email: <a href='mailto:jennibiediger@gmail.com'>Jenni@gmail.com</a></h3>
+                    <div className="icons">
+                        <a href="https://www.facebook.com" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon size='3x' color="#000" icon={['fab', 'facebook']} /></a>
+                        <a href="https://www.instagram.com" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon size='3x' color="#000" icon={['fab', 'instagram']} /></a>
+                    </div>
+                    </div>
+                    
+                </footer>
             </div>
         )
     }
