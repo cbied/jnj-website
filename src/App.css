@@ -98,7 +98,7 @@ div.container-fluid {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
 }
 
@@ -107,6 +107,12 @@ div.container-fluid {
   max-height: 60vh;
   border-radius: 15px;
 }
+
+.homePic {
+  width: 28vw !important;
+  border-radius: 50% !important;
+}
+
 
 .services {
   margin-bottom: 2rem;
@@ -190,11 +196,15 @@ img.media-object {
  transform: rotate(90deg);
 }
 
+#luckyBailyPic {
+  width:20vw;
+}
+
 /* About */
 .aboutRow {
   width: 75vw;
   height: 55vh;
-  background: rgba(255,255,255,.6);
+  background: rgba(255,255,255,.9);
   border-radius: 15px;
   margin-top: 6rem;
   margin-left: 3rem;
@@ -216,6 +226,10 @@ img.media-object {
   margin-left: 6rem;
 }
 
+.aboutInfo div img.imgOne {
+  width:  16.5vw;
+}
+
 /* Contact */ 
 
 .contactUs {
@@ -231,6 +245,11 @@ img.media-object {
   padding: 4rem;
 }
 
+.contact a {
+  color: black;
+  /* text-decoration: none; */
+}
+
 .contactIcons {
   display: flex;
   justify-content: space-around;
@@ -238,6 +257,8 @@ img.media-object {
   padding-bottom: 3rem;
   
 }
+
+
 
 
 

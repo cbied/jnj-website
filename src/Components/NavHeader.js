@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
 import { Button, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { library } from "@fortawesome/fontawesome-svg-core/";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome/";
+import { faFacebook, faInstagram, faArtstation } from "@fortawesome/free-brands-svg-icons/";
+library.add(faFacebook, faInstagram, faArtstation);
 
 export class NavHeader extends Component {
     constructor(props) {
@@ -13,9 +18,10 @@ export class NavHeader extends Component {
     }
 
 
+
     toggle() {
         this.setState({
-          isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen
         });
     }
 
@@ -30,22 +36,30 @@ export class NavHeader extends Component {
                     <Nav className="ml-auto" navbar>
                     <NavItem className='nav-link'>
                         <Link to="/" >
-                            <Button color='primary'>Home</Button>
+                            <Button color='primary'
+                            onClick={this.toggle}
+                            >Home</Button>
                         </Link>
                     </NavItem>
                     <NavItem className='nav-link'>
                         <Link to="/services">
-                            <Button color='primary'>Services</Button>
+                            <Button color='primary'
+                            onClick={this.toggle}
+                            >Services</Button>
                         </Link>
                     </NavItem>
                     <NavItem  className='nav-link'>
                         <Link to="/about">
-                            <Button color='primary'>About Us</Button>
+                            <Button color='primary'
+                            onClick={this.toggle}
+                            >About Us</Button>
                         </Link>
                     </NavItem>
                     <NavItem  className='nav-link'>
                         <Link to="/contact">
-                            <Button color='primary'>Contact Us</Button>
+                            <Button color='primary'
+                            onClick={this.toggle}
+                            >Contact Us</Button>
                         </Link>
                     </NavItem>
                     
@@ -73,12 +87,25 @@ export class NavHeader extends Component {
                             <Button color='primary'>About Us</Button>
                         </Link>
                     </NavItem>
-                    <NavItem  className='nav-link'>
+                    <NavItem  className='nav-link mr-3'>
                         <Link to="/contact">
                             <Button color='primary'>Contact Us</Button>
                         </Link>
                     </NavItem>
-                    
+                    <ReactTooltip />
+                    <a
+                    data-tip="Register, login, schedule an appointment"
+                    className='mr-3'
+                    href="https://jnjequinemassage.com/#/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon
+                    size="3x"
+                    color="#000"
+                    icon={["fab", "artstation"]}
+                    />
+                </a>
                     </Nav>
                 </Collapse>
             </Navbar>
