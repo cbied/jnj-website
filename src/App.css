@@ -137,7 +137,8 @@ div.container-fluid {
 
 
 .contactSection {
-  background-image: url('contact.jpg');
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-image: url('contact.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -219,6 +220,10 @@ img.media-object {
   width: 20vw;
   height: 50vh;
   border-radius: 50%;
+}
+
+.aboutInfo p {
+  padding: 0 3rem 0 3rem;
 }
 
 .bottom {

@@ -15,13 +15,13 @@ export class About extends Component {
                     </div>
                     <div>
                     <h3>Jenni Biediger</h3>
-                    <p style={{'fontWeight': 'Bold'}}>
+                    <p>
                         Jenni has had a love for animals for her entire life! From bringing home strays to volunteering at the ASPCA in Australia, she loves the company of animals. 
                     </p>
-                    <p style={{'fontWeight': 'Bold'}}>
+                    <p>
                         Her two Tennessee Walking horses and three dogs keep her on her toes and up to date with the latest animal therapies. 
                     </p>
-                    <p style={{'fontWeight': 'Bold'}}>
+                    <p>
                         Jenni is certified in red light therapy; and she does equine and canine message therapy. 
                     </p>
                     </div>
@@ -32,14 +32,9 @@ export class About extends Component {
                     <div>
                     <h3>James Meeks</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                        voluptas reprehenderit animi quaerat provident dicta accusamus
-                        reiciendis. Amet laborum fugit ipsam atque distinctio
-                        similique et officia expedita cum asperiores. Consequatur
-                        doloremque corporis excepturi odit vero error ab, voluptate
-                        ipsum quo illum sunt iste eveniet neque, corrupti ratione
-                        saepe et. Asperiores.
+                    For most of James' adult life, he has spent protecting this country. James joined the Navy in 1988 and retired after 23 years of service. 
                     </p>
+                    <p>He has always had a love and respoct for animals of any size but once he was given a beautiful black horse named Storm, he was hooked and has not looked back.</p>
                     </div>
                     <div>
                     <img src={james} alt="james" />

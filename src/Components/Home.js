@@ -69,7 +69,7 @@ return (
             />
         </div>
         <aside>
-            <h4>Mission Statment Mission Statment Mission Statment Mission Statment Mission Statment Mission Statment Mission Statment Mission Statment </h4>
+            <h4 style={{'padding': '3rem', 'lineHeight': '2rem'}}>Our Mission is to help, heal, and love as many horses and dogs as we can, through our healing hands.</h4>
         </aside>
         </div>
     </Container>
