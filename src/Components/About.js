@@ -34,7 +34,7 @@ export class About extends Component {
                     <p>
                     For most of James' adult life, he has spent protecting this country. James joined the Navy in 1988 and retired after 23 years of service. 
                     </p>
-                    <p>He has always had a love and respoct for animals of any size but once he was given a beautiful black horse named Storm, he was hooked and has not looked back.</p>
+                    <p>He has always had a love and respect for animals of any size but once he was given a beautiful black horse named Storm, he was hooked and has not looked back.</p>
                     </div>
                     <div>
                     <img src={james} alt="james" />
