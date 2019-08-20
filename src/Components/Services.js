@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import equineMassage from "../equineMassage.jpg";
 import redLight from '../red-light.jpg'
 import luckyBaily from '../luckyBaily.jpg';
-import { Jumbotron, Container, Media } from "reactstrap";
+import { Jumbotron, Container, Media, Row, Col } from "reactstrap";
 
 export class Services extends Component {
 render() {
@@ -64,7 +64,7 @@ return (
 
     <Container fluid>
         <Media className="mt-1 redLight smallWidth p-4">
-        <Media body>
+        <Media body style={{'padding-right': '2rem'}}>
             <h3>Red light Therapy</h3>
             <p>
             Reduces pain and swelling, increases lymphatic
@@ -78,17 +78,26 @@ return (
             <h3>
             Red light therapy has been shown to have the following effect
             </h3>
-            <p>
-            Reduces pain and swelling;Increases lymphatic
-            activity;Accelerates cell regeneration and healing;Increases
-            circulation;Relaxes muscles;Encourages collagen production (this
-            is why it’s used cosmetically for people as well);Regulates
-            serotonin levels (Serotonin mediates inflammation and allergic
-            reactions. It also aids in blood clotting, initiating sleep, and
-            fighting depression); andHas anti-viral properties- increases
-            antibody production in the blood stream to allow the body to
-            fight off viruses.
-            </p>
+            <Row style={{'textAlign': 'left'}}>
+                <Col xs>
+                    <ul className='benefitList'>
+                        <li>Reduces pain and swelling</li>
+                        <li>Increases lymphatic activity</li>
+                        <li>Accelerates cell regeneration and healing</li>
+                        <li>Increases circulation</li>
+                        <li>Relaxes muscles</li>
+                        <li>Encourages collagen production (this is why it’s used cosmetically for people as well)</li>
+                    </ul>
+                </Col>
+                <Col xs>
+                    <ul className='benefitList'>
+                        <li>Regulates serotonin levels (Serotonin mediates inflammation and allergic reactions</li>
+                        <li>aids in blood clotting</li>
+                        <li>initiating sleep</li>
+                        <li>increases antibody production in the blood stream to allow the body to fight off viruses</li>
+                    </ul>
+                </Col>
+            </Row>
             <p>
             Aside from the fact that a red light can be used to stimulate
             just about any acupressure point on the horse, it can also be
@@ -107,7 +116,7 @@ return (
             alt="Generic placeholder image"
             /> */}
             <img
-            style={{'transform':'rotate(0deg)'}}
+            style={{'transform':'rotate(0deg)', 'margin-top':'8rem'}}
             src={redLight}
             alt="Red light therapy"
             className="serviceImgs"

@@ -109,8 +109,10 @@ div.container-fluid {
 }
 
 .homePic {
-  width: 28vw !important;
+  width: 25rem !important;
+  height: 25rem;
   border-radius: 50% !important;
+  padding: 2rem;
 }
 
 
@@ -201,6 +203,10 @@ img.media-object {
   width:20vw;
 }
 
+.benefitList li {
+  margin-bottom: .5rem;
+}
+
 /* About */
 .aboutRow {
   width: 75vw;
@@ -264,7 +270,29 @@ img.media-object {
 }
 
 
+@media (max-width: 775px) {
+  /* Home about section */
+  .about {
+    flex-direction: column;
+    
+  }
 
+  .homePic {
+    width: 20rem !important;
+    height: 22rem;
+    margin-top: 2rem;
+  }
+
+  /* Contact */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact div {
+    margin-bottom: 2rem;
+  }
+}
 
 
 @media (max-width: 700px) {
@@ -275,6 +303,7 @@ img.media-object {
     justify-content: space-between;
     align-items: center;
   }
+
 
   /* Services reformat latout small screens  */
   .smallWidth {
