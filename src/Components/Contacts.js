@@ -54,11 +54,7 @@ export class Contacts extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <FontAwesomeIcon
-                    size="3x"
-                    color="#000"
-                    icon={["fas", "faDribbbleSquare"]}
-                    />
+                   
                 </a>
                 </div>
             </Container>

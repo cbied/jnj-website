@@ -16,7 +16,7 @@ return (
 
     <Container fluid className="equineMassage">
         <Media className="mt-1 smallWidth">
-        <Media left middle href="#">
+        <Media left middle className='imgPosition'>
             {/* <Media
             object
             data-src={equineMassage}
@@ -64,7 +64,7 @@ return (
 
     <Container fluid>
         <Media className="mt-1 redLight smallWidth p-4">
-        <Media body style={{'padding-right': '2rem'}}>
+        <Media body style={{'paddingRight': '2rem'}}>
             <h3>Red light Therapy</h3>
             <p>
             Reduces pain and swelling, increases lymphatic
@@ -109,16 +109,16 @@ return (
             laminitis-associated pain.
             </p>
         </Media>
-        <Media left middle href="#">
+        <Media left middle className='imgPosition'>
             {/* <Media
             object
             data-src="holder.js/64x64"
             alt="Generic placeholder image"
             /> */}
             <img
-            style={{'transform':'rotate(0deg)', 'margin-top':'8rem'}}
             src={redLight}
             alt="Red light therapy"
+            style={{'transform':'rotate(0deg)'}}
             className="serviceImgs"
             />
         </Media>
@@ -127,15 +127,16 @@ return (
 
     <Container fluid className="canineTherapy">
         <Media className="mt-1 smallWidth">
-        <Media left middle href="#">
+        <Media left middle className='imgPosition'>
             {/* <Media
             object
             data-src="holder.js/64x64"
             alt="Generic placeholder image"
             /> */}
-            <img src={luckyBaily} alt="Dogs Lucky and Baily" id='luckyBailyPic'/>
+            <img src={luckyBaily} alt="Dogs Lucky and Baily" id='luckyBailyPic' style={{'transform':'rotate(0deg)'}}
+            className="serviceImgs"/>
         </Media>
-        <Media body style={{'padding': '3.3rem'}}>
+        <Media body className='canineBody'>
             <h3>What Is Canine Massage Therapy?</h3>
             <p>
             Relaxation.Increased oxygenation of the blood.Pain

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import jenni from "../jenniPic.PNG";
 import jenniJames from '../jenniJames.jpg'
 import { Jumbotron, Container, Row, Col } from "reactstrap";
 import { library } from "@fortawesome/fontawesome-svg-core/";

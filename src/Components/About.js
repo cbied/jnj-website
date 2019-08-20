@@ -7,7 +7,7 @@ export class About extends Component {
     render() {
         return (
             <div>
-            <Container>
+            <Container className='aboutContainer'>
                 <Row className="aboutRow">
                 <Col sm={{ size: 12, order: 2 }} className="aboutInfo">
                     <div>
@@ -30,7 +30,7 @@ export class About extends Component {
                 <Row className="aboutRow bottom">
                 <Col sm="12" md={{ size: 12 }} className="aboutInfo">
                     <div>
-                    <h3>James Meeks</h3>
+                    <h3 className='name'>James Meeks</h3>
                     <p>
                     For most of James' adult life, he has spent protecting this country. James joined the Navy in 1988 and retired after 23 years of service. 
                     </p>

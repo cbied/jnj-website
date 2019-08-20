@@ -194,13 +194,22 @@ img.media-object {
 }
 
 .serviceImgs {
- width: 30vw;
- margin-top: 5rem;
+ width: 30rem;
+ /* margin-top: 5rem; */
  transform: rotate(90deg);
+ margin: 3rem auto .5rem auto !important;
+}
+
+.imgPosition {
+  align-self: center;
 }
 
 #luckyBailyPic {
-  width:20vw;
+  width:20rem;
+}
+
+.canineBody {
+  padding: 3.3rem
 }
 
 .benefitList li {
@@ -208,13 +217,19 @@ img.media-object {
 }
 
 /* About */
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutRow {
-  width: 75vw;
-  height: 55vh;
+  width: 60rem;
   background: rgba(255,255,255,.9);
   border-radius: 15px;
   margin-top: 6rem;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 .aboutInfo {
@@ -223,8 +238,8 @@ img.media-object {
 }
 
 .aboutInfo div img {
-  width: 20vw;
-  height: 50vh;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
 }
 
@@ -234,12 +249,9 @@ img.media-object {
 
 .bottom {
   margin-top: 3rem;
-  margin-left: 6rem;
+  
 }
 
-.aboutInfo div img.imgOne {
-  width:  16.5vw;
-}
 
 /* Contact */ 
 
@@ -283,6 +295,12 @@ img.media-object {
     margin-top: 2rem;
   }
 
+  /* Services */
+  .smallWidth {
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Contact */
   .contact {
     flex-direction: column;
@@ -292,6 +310,23 @@ img.media-object {
   .contact div {
     margin-bottom: 2rem;
   }
+
+  /* about page */
+
+  .aboutInfo {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+    .aboutRow {
+    width: 30rem;
+   
+  }
+/* 
+  .bottom {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  } */
 }
 
 
@@ -306,20 +341,24 @@ img.media-object {
 
 
   /* Services reformat latout small screens  */
-  .smallWidth {
-    flex-direction: column;
-    align-items: center;
-  }
+  
   /* Services reformat images */
   .serviceImgs {
-    width: 40vw;
-    margin: 3rem auto .5rem auto;
+    width: 100%;
+    margin: 6rem auto 2rem auto !important;
+  }
+
+#luckyBailyPic {
+    width:100%;
+    height: 30rem;
+  }
+
+.canineBody {
+    padding: 1.3rem
   }
 
   /* About about pics */
-  .aboutInfo {
-    flex-direction: column;
-  }
+
 
   .aboutInfo div img {
     margin-top: 1rem;
@@ -327,6 +366,19 @@ img.media-object {
     height: 20vh;
     border-radius: 50%;
   }
+
+  .aboutRow {
+    width: 20rem;
+   height: 45rem !important;
+   
+  }
+
+  
+
+
+.name {
+  margin-top:1rem;
+}
 
   /* About about rows */
   .aboutRow {
