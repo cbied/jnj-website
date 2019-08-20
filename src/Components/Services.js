@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import equineMassage from "../equineMassage.jpg";
-import luckyBaily from '../luckyBaily.jpg'
+import redLight from '../red-light.jpg'
+import luckyBaily from '../luckyBaily.jpg';
 import { Jumbotron, Container, Media } from "reactstrap";
 
 export class Services extends Component {
@@ -100,10 +101,16 @@ return (
             </p>
         </Media>
         <Media left middle href="#">
-            <Media
+            {/* <Media
             object
             data-src="holder.js/64x64"
             alt="Generic placeholder image"
+            /> */}
+            <img
+            style={{'transform':'rotate(0deg)'}}
+            src={redLight}
+            alt="Red light therapy"
+            className="serviceImgs"
             />
         </Media>
         </Media>
