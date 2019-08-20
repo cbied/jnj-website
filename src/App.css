@@ -197,7 +197,7 @@ img.media-object {
  width: 30rem;
  /* margin-top: 5rem; */
  transform: rotate(90deg);
- margin: 3rem auto .5rem auto !important;
+ margin: 3rem auto 3rem auto !important;
 }
 
 .imgPosition {
